@@ -1,0 +1,14 @@
+extends ../layout
+block content 
+    body
+        h1(class = "grey") Edit Product
+        form(action="/products/edit/"+product._id, method="post" )
+            .form-group
+                <label for="name">Product Name:</label>
+                input(type="text" class="form-control" placeholder="Enter name" name = "name" value=product.name)
+            .form-group 
+                <label for="price">Product Price:</label>
+                input(type="text" class="form-control" placeholder="Enter price" name = "price" value=product.price) 
+            .form-group    
+                input(type= "submit" class= "btn btn-info")
+

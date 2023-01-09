@@ -1,0 +1,21 @@
+extends layout
+block content
+  h1(class = "grey") My Shopping Cart
+  - var total = 0
+  table.table
+    thead
+      th Name 
+      th Price 
+
+    tbody
+      each data in cart 
+        - total += Number(data.price)
+        tr
+          td=data.name 
+          td=data.price
+          td 
+            a(href="/products/cart/remove/"+data._id ,class = "btn btn-danger") Remove Item
+    tfoot(class = "gr") 
+      tr
+        td Total 
+        td=total 

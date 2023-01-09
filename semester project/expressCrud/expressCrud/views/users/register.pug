@@ -1,0 +1,20 @@
+extends ../layout
+  
+block content 
+    body
+        h1(class = "grey") Sign Up
+        form(action="/register", method="post" )
+            .form-group
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" placeholder="Enter name" name = "name">
+            .form-group
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" placeholder="Enter email" name = "email">
+            .form-group 
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" placeholder="Enter password" name = "password"> 
+            .form-group    
+                input(type= "submit" class= "btn btn-info" value = "Register")      
+            .form-group
+                a(class = "account" href="./login") already have an account?
+            

@@ -1,0 +1,66 @@
+.form-group {
+  margin-top: 2%;
+}
+body{
+  background-image: url("../images/realistic-car-headlights-ad-composition-headlights-with-green-purple-illumination_1284-56577.webp");
+  background-repeat: no-repeat;
+  background-size: 1950px 1000px;
+}
+.btn {
+  margin-right: 1%;
+}
+nav{
+  background-color: grey;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  /* justify-content: space-between; */
+
+}
+li{
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+a:hover{
+  color: black;
+}
+.grey{
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+th{
+  color: white;
+}
+td{
+  color: white;
+}
+.gr{
+  background-color: grey;
+}
+label{
+  color: white;
+}
+.account{
+  background-color: #10ccf4;
+  padding: 7px;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+.logout{
+  margin: -40px
+}

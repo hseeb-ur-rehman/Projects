@@ -1,0 +1,23 @@
+doctype html 
+
+html 
+
+  head 
+    title NavBar 
+    <link href = "/stylesheets/style.css" rel = "stylesheet" type = "text/css">
+
+  body 
+    nav 
+      ul 
+       li 
+        a(href="/") Home
+       li 
+        a(href="/products") Product
+       li 
+        a(href="/cart") My Shopping Cart 
+       li
+        if !user 
+          a(href="/register") Sign Up
+       li
+        if user
+          a(class = "logout" href="/logout") Logout

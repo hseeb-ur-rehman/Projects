@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    .row
+        .col-sm-15    
+            h1(class = "grey") Products Item
+
+    table.table
+        thead
+            tr 
+                th Name
+                th Price 
+                th
+        tbody 
+            each data in product
+                tr
+                    td=data.name 
+                    td=data.price
+    if !user                
+        a(class = "account" href="/register") Sign Up                
