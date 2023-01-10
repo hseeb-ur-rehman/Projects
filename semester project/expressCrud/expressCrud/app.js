@@ -30,14 +30,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.set('trust proxy', 1) // trust first proxy
-app.use(session({
-  secret: 'dummytext',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: true }
-}))
-
 app.use("/", indexRouter);
 app.use("/products", productsRouter);
 app.use("/", users);
